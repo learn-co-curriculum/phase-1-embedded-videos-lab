@@ -1,9 +1,4 @@
----
-language: html
-tags: html5, semantic elements, forms, input, audio, video, media
-type: code along
-resources: 0
----
+
 
 ## Code Along Exercise 2 ~ 39min
 
