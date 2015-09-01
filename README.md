@@ -1,10 +1,16 @@
----
-tags: typography, images, links, iframes, forms, tables, media, responsive
-language: html, css, less, javascript
----
+## Overview
 
-# Exceptional Realty Group Website
+In this code along we will be adding an embedded iframe map as well as a contact form.
 
-## Description
+## Steps
 
-This is an example site for the Intro to Front-end Web Development Course at The Flatiron School.
+1. Fork this repository.
+2. Clone your fork.
+3. cd into the folder for this lab.
+4. Code along with the included video below.
+
+## Code Along Exercise 2 ~ 39min
+
+<iframe width="640" height="360" src="//www.youtube.com/embed/lYHcdsF0Iug?list=PLj148bJp5wixh7e887553JmVMqunH5VFH" frameborder="0" allowfullscreen></iframe>
+
+These videos are also available as a single [continuous playlist from the link here](https://www.youtube.com/watch?v=lYHcdsF0Iug&list=PLj148bJp5wixh7e887553JmVMqunH5VFH).
