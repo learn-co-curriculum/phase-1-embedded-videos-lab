@@ -12,5 +12,3 @@ In this code along we will be adding an embedded iframe map as well as a contact
 ## Code Along Exercise 2 ~ 39min
 
 <iframe width="100%" height="720" src="//www.youtube.com/embed/lYHcdsF0Iug?list=PLj148bJp5wixh7e887553JmVMqunH5VFH&amp;rel=0&amp;controls=1&amp;showinfo=1" frameborder="0" allowfullscreen></iframe>
-
-These videos are also available as a single [continuous playlist from the link here](https://www.youtube.com/watch?v=lYHcdsF0Iug&list=PLj148bJp5wixh7e887553JmVMqunH5VFH).
