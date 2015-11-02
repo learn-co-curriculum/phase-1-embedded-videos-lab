@@ -5,4 +5,4 @@
 
 <p><a href="https://www.youtube.com/watch?v=ymUxDt_mOxU">HTML5 Video Embed Code-Along</a></p>.
 
-Make sure to use the code from the previous codealong for this lab
+After you fork and clone, copy your code from the previous codealong into this repo.
