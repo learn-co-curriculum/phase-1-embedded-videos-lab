@@ -1,14 +1,11 @@
-## Overview
+# HTML5 Video Embed Code-Along
 
-In this code along we will be adding an embedded iframe map as well as a contact form.
+<iframe width="640" height="480" src="//www.youtube.com/embed/ymUxDt_mOxU?rel=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
 
-## Steps
+<p><a href="https://www.youtube.com/watch?v=ymUxDt_mOxU">HTML5 Video Embed Code-Along</a></p>.
 
-1. Fork this repository.
-2. Clone your fork.
-3. cd into the folder for this lab.
-4. Code along with the included video below.
+Fork and clone this repo to download all of the starter code for the code along.
 
-## Code Along Exercise 2 ~ 39min
+[Click here to get the MP4 video linked to in the exercise](http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/real-estate.mp4)
 
-<iframe width="100%" height="720" src="//www.youtube.com/embed/lYHcdsF0Iug?list=PLj148bJp5wixh7e887553JmVMqunH5VFH&amp;rel=0&amp;controls=1&amp;showinfo=1" frameborder="0" allowfullscreen></iframe>
+[Click here to get the OGV video linked to in the exercise](http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/real-estate.ogv)
