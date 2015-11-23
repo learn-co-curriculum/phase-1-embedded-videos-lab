@@ -9,4 +9,3 @@ Fork and clone this repo to download all of the starter code for the code along.
 [Click here to get the MP4 video linked to in the exercise](http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/real-estate.mp4)
 
 [Click here to get the OGV video linked to in the exercise](http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/real-estate.ogv)
->>>>>>> 2c6512ef914cb919c3146e6d8576bc4e1ee6ffe2
