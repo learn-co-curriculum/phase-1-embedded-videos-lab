@@ -4,20 +4,11 @@ require 'capybara/rspec'
 require 'rspec'
 require 'spec_helper'
 
-describe 'site pages' do
-
-  before(:all) do
-    start_server_thread
-    create_screenshots
-  end
-
-  after(:all) do
-    exit_server_thread
-  end
+describe 'index.html' do
 
   before(:each) do
     @comparison = GreenOnion::Compare.new
-    @tolerance = 10.0
+    @tolerance = 0.5
   end
 
   it 'index page should match the solution' do
