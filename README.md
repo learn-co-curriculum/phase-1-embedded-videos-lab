@@ -1,10 +1,10 @@
 # HTML5 Video Embed Code-Along
 
-Please fork and clone the starter code from this repository for the codealong. Then code laong with the video below.
+<iframe width="640" height="480" src="//www.youtube.com/embed/ymUxDt_mOxU?rel=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
 
-<iframe width="640" height="480" src="//www.youtube.com/embed/ymUxDt_mOxU?rel=0" frameborder="0" allowfullscreen></iframe>
+<p><a href="https://www.youtube.com/watch?v=ymUxDt_mOxU">HTML5 Video Embed Code-Along</a></p>
 
-After you finish, make sure you <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">install Firefox</a> if you haven't already as it is required for the screenshot tests to run. Then, type `learn` command from Terminal to run local tests.
+Fork and clone this repo to download all of the starter code for the code along.
 
 [Click here to get the MP4 video linked to in the exercise](http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/real-estate.mp4)
 

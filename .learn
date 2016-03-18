@@ -10,6 +10,4 @@ tags:
   - media
 type:
   - code along
-tests:
- - green_onion
 resources: 2
