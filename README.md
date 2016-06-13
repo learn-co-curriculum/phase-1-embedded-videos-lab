@@ -4,7 +4,7 @@
 
 <p><a href="https://www.youtube.com/watch?v=ymUxDt_mOxU">HTML5 Video Embed Code-Along</a></p>
 
-Fork and clone this repo to download all of the starter code for the code along.
+Fork and clone this repo (or use 'learn open') to download all of the starter code for the code along.
 
 [Click here to get the MP4 video linked to in the exercise](http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/real-estate.mp4)
 
