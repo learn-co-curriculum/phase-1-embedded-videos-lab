@@ -14,7 +14,7 @@ cd exceptional-realty
 ```
 
 Following good git practices, since we're going to be adding some new content,
-type `git checkout -b 'embed-video'` to start up a new branch for this lesson.
+type `git checkout -b embed-video` to start up a new branch for this lesson.
 
 [Click here to get the MP4 video linked to in the exercise](http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/real-estate.mp4)
 
@@ -89,13 +89,18 @@ we'd have to dig up an old, out of date browser to see our message and link.
 
 We now have a nice video on our home page! Everything is working and looking
 good, so let's merge our `embed-video` branch with `master`. First, you'll
-need to add and commit the work completed, merge our branch into `master`,
-add and commit the newly merged content, then push up the work to your
-repository:
+want to add, commit and push the work on our branch.
 
 ```
 git add .
 git commit -m 'add embedded video to index.html'
+git push -u origin embed-video
+```
+
+Then, we will merge our branch into `master`, add and commit the newly merged
+content, then push up the work to your repository:
+
+```
 git checkout master
 git merge embed-video
 git add .
