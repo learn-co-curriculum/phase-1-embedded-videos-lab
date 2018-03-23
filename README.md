@@ -4,18 +4,21 @@
 
 <p><a href="https://www.youtube.com/watch?v=ymUxDt_mOxU">HTML5 Video Embed Code-Along</a></p>
 
-If you're working in the in-browser Learn IDE, all the files needed to follow
-along are available if you click 'Open IDE' in Learn. Otherwise, fork and clone
-this repo to download all of the starter code for the code along.
+All the files needed to follow along are available in this lab. Just click 'Open IDE' in Learn. However, if you were following along using a personal `exceptional-realty`
+repository in the previous HTML lessons, you can continue from where we left
+off by running the following in your terminal:
+
+```
+git clone https://github.com/<your_username_here>/exceptional-realty
+cd exceptional-realty
+```
+
+Following good git practices, since we're going to be adding some new content,
+type `git checkout -b 'embed-video'` to start up a new branch for this lesson.
 
 [Click here to get the MP4 video linked to in the exercise](http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/real-estate.mp4)
 
 [Click here to get the OGV video linked to in the exercise](http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/real-estate.ogv)
-
-This lesson includes the files you'll need to practice the concepts being
-discussed. However, if you have an existing personal repository from the
-previous lessons on building a website, feel free to run `git clone https://github.com/<your_username_here>/exceptional-realty` to work from there.
-Don't forget to add, commit and push up your work at the end!
 
 ### Embedding Videos
 
@@ -81,6 +84,24 @@ files work. In Chrome and Safari, for instance, the `.mp4` version of the video
 will play. Opera and Firefox, on the other hand, will play the `.ogv` file.
 Pretty much all modern browsers support at least one of these file types, so
 we'd have to dig up an old, out of date browser to see our message and link.
+
+### Wrapping Up
+
+We now have a nice video on our home page! Everything is working and looking
+good, so let's merge our `embed-video` branch with `master`. First, you'll
+need to add and commit the work completed, merge our branch into `master`,
+add and commit the newly merged content, then push up the work to your
+repository:
+
+```
+git add .
+git commit -m 'add embedded video to index.html'
+git checkout master
+git merge embed-video
+git add .
+git commit -m 'merged embed-video branch'
+git push
+```
 
 <p data-visibility='hidden'>View <a
 href='https://learn.co/lessons/html5-video-embed-code-along' title='HTML5 Video
