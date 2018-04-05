@@ -64,7 +64,16 @@ look like this:
 Now we'll add _a second source_, but change the source to
 "videos/real-estate.ogv", and the type to "video/ogg".
 
-We can also add a message inside the `<video>` tags. This message will be shown
+This secondary source acts as a fallback.  Currently, all modern browsers support
+`video/mp4`, but as of 2018, roughly 5% of users may still be using a browser
+that does not, so adding this second line will ensure that every user can watch
+the video.  
+
+Well.. every user can watch the video as long as the browser they are using supports
+the `<video>` element itself.  Again, there is still a small percentage of users
+that are using outdated browsers that may not know what to do the HTML5 `<video>` tags.
+
+For these users, we can also add a message inside the `<video>` tags. This message display
 if a user's browser doesn't support the HTML5 video element. The message can
 simply be "Your browser does not support HTML5 video", but we want to be nice
 to our users, so we can also go ahead and add a link in this message that opens
