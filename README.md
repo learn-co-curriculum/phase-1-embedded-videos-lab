@@ -1,50 +1,96 @@
 # HTML5 Video Embed Code-Along
 
-<iframe width="640" height="480" src="//www.youtube.com/embed/ymUxDt_mOxU?rel=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
+## Problem Statement
 
-<p><a href="https://www.youtube.com/watch?v=ymUxDt_mOxU">HTML5 Video Embed Code-Along</a></p>
+Adding images to HTML content is a great way to make your websites more
+appealing and engaging for your users. Sometimes though, we want _just a little
+more_, a way for   Sometimes, we want to provide some _video content_.
 
-All the files needed to follow along are available in this lab. Just click 'Open IDE' in Learn. However, if you were following along using a personal `exceptional-realty`
-repository in the previous HTML lessons, you can continue from where we left
-off by running the following in your terminal:
+In the past, adding video to HTML was only possible using the `iframe` tag.
+This is still absolutely possible, and sites like [Youtube](youtube.com) still
+provide iframe code as a default option. However, with HTML5, a _new_ tag was
+introduced: `video`.  The `video` tag provides a more _semantic_ method for
+including video, and allows for some customization specific to videos that
+iframe does not.  Namely, with the `video` tag, we can provide multiple video
+source links as well as fall back messaging in the event that a site visitor is
+using an out of date browser.
 
+In this lesson, we will be exploring the HTML `video` tag then applying what
+we've learned in a brief lab.
+
+## Objectives
+
+1. Introduce the HTML `video` tag and its attributes
+2. Practice using the `video` tag by creating our own
+
+## Introduce Embedded Videos
+
+The `video` tag, similar to `img`, can display video files stored locally (i.g.
+in a 'videos' folder within your website) or videos from somewhere else on the
+internet.  In this  lesson, we will be using a video stored elsewhere on the
+internet.. a _dramatic_ real estate video. There are two video formats, MP4 and
+OGV:
+
+**Caution: The music in these videos may be loud initially**
+
+* MP4 video: http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/real-estate.mp4
+* OGV video: http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/real-estate.ogv
+
+Like `img` tags, `video` tags can contain a `src` attribute pointed to the file we want to play.  This file could be accessed using a _relative_, local folder path, or an _absolute_ URL path.
+
+However, unlike `img`, `src` is optional. Alternatively, the `video` tag is designed
+so that it can _wrap_ around multiple, separate `source` tags. A basic `video`
+element, complete with source tags would look like this:
+
+```html
+<video>
+  <source src="https://s3.amazonaws.com/ironboard-learn/cat_video.mp4" type="video/mp4">
+  <source src="https://s3.amazonaws.com/ironboard-learn/cat_video.ogv" type="video/ogg">
+</video>
 ```
-git clone https://github.com/<your_username_here>/exceptional-realty
-cd exceptional-realty
+
+Why two sources? Compatibility! When HTML is rendered, your browser will try to
+load the first source.  If it fails, it will _fall back_ to the second source.
+
+All modern browsers support MP4 files, so if we had the above video on a
+website, its likely that more than 99% of visitors will see the MP4 version.
+However, in the chance that a site visitor is still using an older version of a
+browser like Firefox, the MP4 file will fail to load and the OGV file will be
+loaded instead. It is still useful to have an alternate video format for this
+reason.
+
+In addition to multiple sources, we can provide an additional fall back, a
+_message_ to users in the even that they are using a browser that is _so_ out of
+date, it doesn't support HTML5.  In that case, we can add something like this:
+
+```html
+<video>
+  <source src="https://s3.amazonaws.com/ironboard-learn/cat_video.mp4" type="video/mp4">
+  <source src="https://s3.amazonaws.com/ironboard-learn/cat_video.ogv" type="video/ogg">
+  Your browser does not support HTML5 video  <a href="https://browsehappy.com/" target="_blank">Please upgrade your browser</a>
+</video>
 ```
 
-Following good git practices, since we're going to be adding some new content,
-type `git checkout -b embed-video` to start up a new branch for this lesson.
+If a user was still hanging on to Internet Explorer 8 (they are out there!),
+instead of video content, they will see the message "Your browser does not
+support HTML5 video", followed by a link to [browsehappy.com](browsehappy.com),
+where they can download an up-to-date browser.
 
-[Click here to get the MP4 video linked to in the exercise](http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/real-estate.mp4)
+The `video` tag has some important attributes to note:
 
-[Click here to get the OGV video linked to in the exercise](http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/real-estate.ogv)
+* `controls` - when this tag is included, the embedded video will always show video controls
+* `autoplay` - when this tag is included, the video will play on page load, rather than waiting for a user to click play
 
-### Embedding Videos
 
-Starting from inside your project folder (wherever your HTML files are stored),
-let's create a new folder for videos by typing `mkdir videos` in our terminal.
-This folder will appear beside your `images` folder. We'll use two videos
-during this lesson, and we need to get them into our project before we can
-incorporate them into the HTML. With the in-browser IDE, we'll need to use our
-old friend `wget`. Navigate into the `videos` folder using `cd`, then when in
-there, use `wget` with the following urls:
+The `width` and `height` attributes are also worth noting. These set the size of the
+video, just as with other HTML tags.  However, it is good practice to set these.
+Without them, the video element may flicker on page load before it loads.
 
-* Our MP4 video: http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/real-estate.mp4
-* Our OGV video: http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/real-estate.ogv
+## Reinforce What We Have Learned By Building a Video Element
 
-Both videos should appear in your `videos` folder. In order to reach all
-browser types, we want to include both of these videos in the event that one
-video type is not supported by a particular browser.
+Let's go ahead and add a `<video>` tags to our `index.html` page.
 
-Okay, we've got our content stored locally, so now we need to place it in our
-webpage. In HTML5, we have a specific element for this, `<video>`. The
-`<video>` element acts slightly differently than other media tags such as
-`<img>`. It needs both an opening and closing tag, and instead of listing the
-source as an attribute, the source of the video is added inside of the opening
-and closing `<video>` tags.
-
-Let's go ahead and add these `<video>` tags to our `index.html` page, just
+just
 below our paragraphs of text. Before adding a source, we'll add one attribute
 to the opening `<video>` tag, `controls`. This will indicate to the browser to
 always show controls for the embedded video.
@@ -55,7 +101,7 @@ to our `.mp4` video using a relative path to the file. We also want to
 designate the type of this source as "video/mp4". At this point, our code will
 look like this:
 
-```
+```html
 <video controls>
   <source src="videos/real-estate.mp4" type="video/mp4">
 </video>
@@ -71,8 +117,8 @@ to our users, so we can also go ahead and add a link in this message that opens
 a new page and navigates to a useful site such as
 [https://browsehappy.com/](https://browsehappy.com/).
 
-```
-<video controls>
+```html
+<video controls
   <source src="videos/real-estate.mp4" type="video/mp4">
   <source src="videos/real-estate.ogv" type="video/ogg">
   Your browser does not support HTML5 video.  <a href="https://browsehappy.com/" target="_blank">Please upgrade your browser</a>
@@ -87,26 +133,7 @@ we'd have to dig up an old, out of date browser to see our message and link.
 
 ### Wrapping Up
 
-We now have a nice video on our home page! Everything is working and looking
-good, so let's merge our `embed-video` branch with `master`. First, you'll
-want to add, commit and push the work on our branch.
 
-```
-git add .
-git commit -m 'add embedded video to index.html'
-git push -u origin embed-video
-```
-
-Then, we will merge our branch into `master`, add and commit the newly merged
-content, then push up the work to your repository:
-
-```
-git checkout master
-git merge embed-video
-git add .
-git commit -m 'merged embed-video branch'
-git push
-```
 
 <p data-visibility='hidden'>View <a
 href='https://learn.co/lessons/html5-video-embed-code-along' title='HTML5 Video
