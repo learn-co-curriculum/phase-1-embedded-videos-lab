@@ -27,20 +27,15 @@ we've learned in a brief lab.
 
 The `video` tag, similar to `img`, can display video files stored locally (i.g.
 in a 'videos' folder within your website) or videos from somewhere else on the
-internet.  In this  lesson, we will be using a video stored elsewhere on the
-internet.. a _dramatic_ real estate video. There are two video formats, MP4 and
-OGV:
+internet.  
 
-**Caution: The music in these videos may be loud initially**
+Like `img` tags, `video` tags can contain a `src` attribute pointed to the file
+we want to play.  This file could be accessed using a _relative_, local folder
+path, or an _absolute_ URL path.
 
-* MP4 video: http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/real-estate.mp4
-* OGV video: http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/real-estate.ogv
-
-Like `img` tags, `video` tags can contain a `src` attribute pointed to the file we want to play.  This file could be accessed using a _relative_, local folder path, or an _absolute_ URL path.
-
-However, unlike `img`, `src` is optional. Alternatively, the `video` tag is designed
-so that it can _wrap_ around multiple, separate `source` tags. A basic `video`
-element, complete with source tags would look like this:
+However, the `src` attribute is optional for `video` tags. Alternatively, the
+`video` tag is designed so that it can _wrap_ around multiple, separate `source`
+tags. A basic `video` element, complete with source tags would look like this:
 
 ```html
 <video>
@@ -81,58 +76,52 @@ The `video` tag has some important attributes to note:
 * `controls` - when this tag is included, the embedded video will always show video controls
 * `autoplay` - when this tag is included, the video will play on page load, rather than waiting for a user to click play
 
-
 The `width` and `height` attributes are also worth noting. These set the size of the
 video, just as with other HTML tags.  However, it is good practice to set these.
 Without them, the video element may flicker on page load before it loads.
 
+The `source` tag is uniquely used for multiple media resources, as we have in
+our example.  The `src` attribute is always required, as it is the location of
+the file we want to play.  The `type` tag is helpful in defining what format the
+media is in.
+
 ## Reinforce What We Have Learned By Building a Video Element
 
-Let's go ahead and add a `<video>` tags to our `index.html` page.
+Its time to apply what we've just learned! In `index.html`, some basic code is
+provided.  Your task is to create a video element complete with _two_ video
+sources and the attributes we've discussed. For this portion of the lesson, we
+will be using a video stored elsewhere on the internet.. a _dramatic_ real
+estate video. There are two video formats, MP4 and OGV:
 
-just
-below our paragraphs of text. Before adding a source, we'll add one attribute
-to the opening `<video>` tag, `controls`. This will indicate to the browser to
-always show controls for the embedded video.
+**Caution: The music in these videos may be loud initially**
 
-Next, we'll add the source. Inside the `<video` tags, add `<source>`, and then,
-as attributes, add in `src` and `type`. For our `src` attribute, we'll point it
-to our `.mp4` video using a relative path to the file. We also want to
-designate the type of this source as "video/mp4". At this point, our code will
-look like this:
+* MP4 video: http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/real-estate.mp4
+* OGV video: http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/real-estate.ogv
 
-```html
-<video controls>
-  <source src="videos/real-estate.mp4" type="video/mp4">
-</video>
-```
+To complete this lab:
 
-Now we'll add _a second source_, but change the source to
-"videos/real-estate.ogv", and the type to "video/ogg".
+1. Create a `video` tag with the attributes `controls` and `autoplay`
+2. Set the width of `video` to '600px', and the height to '400px'
+2. Create a `source` tag for the MP4 video that has `src` and `type` attributes
+3. Create a fall back `source` tag for the OGV video that has `src` and `type` attributes
 
-We can also add a message inside the `<video>` tags. This message will be shown
-if a user's browser doesn't support the HTML5 video element. The message can
-simply be "Your browser does not support HTML5 video", but we want to be nice
-to our users, so we can also go ahead and add a link in this message that opens
-a new page and navigates to a useful site such as
-[https://browsehappy.com/](https://browsehappy.com/).
+Run `learn` and follow the test messages as you go.  You can also run
+`httpserver` or open `index.html` in a browser tab to see your work as you build
+it. Run `learn submit` once you've passed all the tests.
 
-```html
-<video controls
-  <source src="videos/real-estate.mp4" type="video/mp4">
-  <source src="videos/real-estate.ogv" type="video/ogg">
-  Your browser does not support HTML5 video.  <a href="https://browsehappy.com/" target="_blank">Please upgrade your browser</a>
-</video>
-```
+### Conclusion
 
-Now, if we test out our site in multiple browsers, we can see how our source
-files work. In Chrome and Safari, for instance, the `.mp4` version of the video
-will play. Opera and Firefox, on the other hand, will play the `.ogv` file.
-Pretty much all modern browsers support at least one of these file types, so
-we'd have to dig up an old, out of date browser to see our message and link.
+With the `video` tag, we can spice up our plain old text websites, whether it is
+a demo reel for a company product or a personal vlog.
 
-### Wrapping Up
+We can also customize the size of the video on our page and even make sure our
+video is viewable by every site visitor, not just those with the most up-to-date
+browsers.
 
+In addition to `video`, there is also an `audio` tag that plays MP3, OGG and WAV
+files.  The `audio` tag works the same way as `video`, has the same `controls`
+and `autoplay` attributes, and also uses the `source` tag! You've actually
+learned two useful HTML5 elements in one!
 
 
 <p data-visibility='hidden'>View <a
