@@ -6,14 +6,14 @@ Adding images to HTML content is a great way to make your websites more
 appealing and engaging for your users. Sometimes though, we want _just a little
 more_, a way for   Sometimes, we want to provide some _video content_.
 
-In the past, adding video to HTML was only possible using the `iframe` tag.
-This is still absolutely possible, and sites like [Youtube](youtube.com) still
+In the past, adding video to HTML was only possible using the `iframe` tag. This
+is still absolutely possible, and sites like [Youtube](youtube.com) still
 provide iframe code as a default option. However, with HTML5, a _new_ tag was
 introduced: `video`.  The `video` tag provides a more _semantic_ method for
-including video, and allows for some customization specific to videos that
-iframe does not.  Namely, with the `video` tag, we can provide multiple video
-source links as well as fall back messaging in the event that a site visitor is
-using an out of date browser.
+including video. It also allows for some customization specific to videos that
+iframe does not.  Namely, with the `video` tag, we can provide _multiple_ video
+source links. If a site visitor is using an out of date browser, the `video` tag
+can fall back to an alternative video source.
 
 In this lesson, we will be exploring the HTML `video` tag then applying what
 we've learned in a brief lab.
@@ -47,16 +47,16 @@ tags. A basic `video` element, complete with source tags would look like this:
 Why two sources? Compatibility! When HTML is rendered, your browser will try to
 load the first source.  If it fails, it will _fall back_ to the second source.
 
-All modern browsers support MP4 files, so if we had the above video on a
-website, its likely that more than 99% of visitors will see the MP4 version.
-However, in the chance that a site visitor is still using an older version of a
-browser like Firefox, the MP4 file will fail to load and the OGV file will be
-loaded instead. It is still useful to have an alternate video format for this
-reason.
+All modern browsers support MP4 files. If we had the above video on a website,
+its likely that more than 99% of visitors will see the MP4 version. However, in
+the chance that a site visitor is still using an older version of a browser like
+Firefox, the MP4 file will fail to load. At this point, the OGV file will load
+instead. It is still useful to have an alternate video format for this reason.
 
-In addition to multiple sources, we can provide an additional fall back, a
-_message_ to users in the even that they are using a browser that is _so_ out of
-date, it doesn't support HTML5.  In that case, we can add something like this:
+In addition to multiple sources, we can provide a fall back message. This
+message will appear to users in the event that they are using a browser that is
+_so_ out of date, it doesn't support HTML5.  For this, we add something like
+this:
 
 ```html
 <video>
@@ -76,9 +76,9 @@ The `video` tag has some important attributes to note:
 * `controls` - when this tag is included, the embedded video will always show video controls
 * `autoplay` - when this tag is included, the video will play on page load, rather than waiting for a user to click play
 
-The `width` and `height` attributes are also worth noting. These set the size of the
-video, just as with other HTML tags.  However, it is good practice to set these.
-Without them, the video element may flicker on page load before it loads.
+The `width` and `height` attributes are also worth noting. These set the size of
+the video, just as with other HTML tags.  However, it is good practice to set
+these. Without them, the video element may flicker on page load before it loads.
 
 The `source` tag is uniquely used for multiple media resources, as we have in
 our example.  The `src` attribute is always required, as it is the location of
@@ -115,12 +115,12 @@ With the `video` tag, we can spice up our plain old text websites, whether it is
 a demo reel for a company product or a personal vlog.
 
 We can also customize the size of the video on our page and even make sure our
-video is viewable by every site visitor, not just those with the most up-to-date
-browsers.
+video is viewable by every site visitor. This way, we're not just catering to
+those with the most up-to-date browsers.
 
 In addition to `video`, there is also an `audio` tag that plays MP3, OGG and WAV
-files.  The `audio` tag works the same way as `video`, has the same `controls`
-and `autoplay` attributes, and also uses the `source` tag! You've actually
+files.  The `audio` tag works the same way as `video`! It has the same `controls`
+and `autoplay` attributes, and also uses the nested `source` tag! You've actually
 learned two useful HTML5 elements in one!
 
 
