@@ -48,10 +48,10 @@ Why two sources? Compatibility! When HTML is rendered, your browser will try to
 load the first source.  If it fails, it will _fall back_ to the second source.
 
 All modern browsers support MP4 files. If we had the above video on a website,
-its likely that more than 99% of visitors will see the MP4 version. However, in
-the chance that a site visitor is still using an older version of a browser like
-Firefox, the MP4 file will fail to load. At this point, the OGV file will load
-instead. It is still useful to have an alternate video format for this reason.
+its likely that more than 99% of visitors will see the MP4 version. However, if
+a site visitor is still using an older version of a browser like Firefox, the
+MP4 file will fail to load. At this point, the OGV file will load instead. It is
+still useful to have an alternate video format for this reason.
 
 In addition to multiple sources, we can provide a fall back message. This
 message will appear to users in the event that they are using a browser that is
@@ -66,22 +66,22 @@ this:
 </video>
 ```
 
-If a user was still hanging on to Internet Explorer 8 (they are out there!),
-instead of video content, they will see the message "Your browser does not
+If a user was still hanging on to Internet Explorer 8 (they are out there),
+they won't see the video content. Instead, they will see the message "Your browser does not
 support HTML5 video", followed by a link to [browsehappy.com](browsehappy.com),
 where they can download an up-to-date browser.
 
 The `video` tag has some important attributes to note:
 
-* `controls` - when this tag is included, the embedded video will always show video controls
-* `autoplay` - when this tag is included, the video will play on page load, rather than waiting for a user to click play
+* `controls` - the embedded video will always show video controls
+* `autoplay` - the video will play on page load, rather than waiting for a user to click play
 
 The `width` and `height` attributes are also worth noting. These set the size of
 the video, just as with other HTML tags.  However, it is good practice to set
 these. Without them, the video element may flicker on page load before it loads.
 
-The `source` tag is uniquely used for multiple media resources, as we have in
-our example.  The `src` attribute is always required, as it is the location of
+The `source` tag is only ever used for multiple media resources, as we have in
+our example.  The `src` attribute of `source` is always required, as it is the location of
 the file we want to play.  The `type` tag is helpful in defining what format the
 media is in.
 
@@ -114,7 +114,7 @@ it. Run `learn submit` once you've passed all the tests.
 With the `video` tag, we can spice up our plain old text websites, whether it is
 a demo reel for a company product or a personal vlog.
 
-We can also customize the size of the video on our page and even make sure our
+We can customize the size of the video on our page and make sure our
 video is viewable by every site visitor. This way, we're not just catering to
 those with the most up-to-date browsers.
 
