@@ -1,36 +1,38 @@
 # HTML5 Video Embed Code-Along
 
+
 ## Problem Statement
 
-Adding images to HTML content is a great way to make your websites more
-appealing and engaging for your users. Sometimes though, we want _just a little
-more_, a way for   Sometimes, we want to provide some _video content_.
+Adding images to HTML content is a great way to make websites more appealing and
+engaging for your users. Sometimes, though, we want _just a little more
+pizzazz_ and we need to add glamorous **video content**.
 
 In the past, adding video to HTML was only possible using the `iframe` tag. This
-is still absolutely possible, and sites like [Youtube](youtube.com) still
-provide iframe code as a default option. However, with HTML5, a _new_ tag was
-introduced: `video`.  The `video` tag provides a more _semantic_ method for
-including video. It also allows for some customization specific to videos that
-iframe does not.  Namely, with the `video` tag, we can provide _multiple_ video
-source links. If a site visitor is using an out of date browser, the `video` tag
-can fall back to an alternative video source.
+method is still implemented, and sites like [Youtube](youtube.com) still provide
+iframe code as a default option. However, with HTML5, a _new_ tag was
+introduced: `video`. The `video` tag provides a more _semantic_ method for
+including video. It also allows for some customization of videos that iframe
+does not. Namely, with the `video` tag, we can provide _multiple_ video source
+links.
 
 In this lesson, we will be exploring the HTML `video` tag then applying what
 we've learned in a brief lab.
+
 
 ## Objectives
 
 1. Introduce the HTML `video` tag and its attributes
 2. Practice using the `video` tag by creating our own
 
+
 ## Introduce Embedded Videos
 
 The `video` tag, similar to `img`, can display video files stored locally (i.g.
 in a 'videos' folder within your website) or videos from somewhere else on the
-internet.  
+internet. 
 
 Like `img` tags, `video` tags can contain a `src` attribute pointed to the file
-we want to play.  This file could be accessed using a _relative_, local folder
+we want to play. This file could be accessed using a _relative_, local folder
 path, or an _absolute_ URL path.
 
 However, the `src` attribute is optional for `video` tags. Alternatively, the
@@ -45,7 +47,7 @@ tags. A basic `video` element, complete with source tags would look like this:
 ```
 
 Why two sources? Compatibility! When HTML is rendered, your browser will try to
-load the first source.  If it fails, it will _fall back_ to the second source.
+load the first source. If it fails, it will _fall back_ to the second source.
 
 All modern browsers support MP4 files. If we had the above video on a website,
 its likely that more than 99% of visitors will see the MP4 version. However, if
@@ -55,7 +57,7 @@ still useful to have an alternate video format for this reason.
 
 In addition to multiple sources, we can provide a fall back message. This
 message will appear to users in the event that they are using a browser that is
-_so_ out of date, it doesn't support HTML5.  For this, we add something like
+_so_ out of date, it doesn't support HTML5. For this, we add something like
 this:
 
 ```html
@@ -77,18 +79,19 @@ The `video` tag has some important attributes to note:
 * `autoplay` - the video will play on page load, rather than waiting for a user to click play
 
 The `width` and `height` attributes are also worth noting. These set the size of
-the video, just as with other HTML tags.  However, it is good practice to set
+the video, just as with other HTML tags. However, it is good practice to set
 these. Without them, the video element may flicker on page load before it loads.
 
 The `source` tag is only ever used for multiple media resources, as we have in
-our example.  The `src` attribute of `source` is always required, as it is the location of
-the file we want to play.  The `type` tag is helpful in defining what format the
+our example. The `src` attribute of `source` is always required, as it is the location of
+the file we want to play. The `type` tag is helpful in defining what format the
 media is in.
+
 
 ## Reinforce What We Have Learned By Building a Video Element
 
 Its time to apply what we've just learned! In `index.html`, some basic code is
-provided.  Your task is to create a video element complete with _two_ video
+provided. Your task is to create a video element complete with _two_ video
 sources and the attributes we've discussed. For this portion of the lesson, we
 will be using a video stored elsewhere on the internet.. a _dramatic_ real
 estate video. There are two video formats, MP4 and OGV:
@@ -105,11 +108,12 @@ To complete this lab:
 2. Create a `source` tag for the MP4 video that has `src` and `type` attributes
 3. Create a fall back `source` tag for the OGV video that has `src` and `type` attributes
 
-Run `learn` and follow the test messages as you go.  You can also run
+Run `learn` and follow the test messages as you go. You can also run
 `httpserver` or open `index.html` in a browser tab to see your work as you build
 it. Run `learn submit` once you've passed all the tests.
 
-### Conclusion
+
+## Conclusion
 
 With the `video` tag, we can spice up our plain old text websites, whether it is
 a demo reel for a company product or a personal vlog.
@@ -119,7 +123,7 @@ video is viewable by every site visitor. This way, we're not just catering to
 those with the most up-to-date browsers.
 
 In addition to `video`, there is also an `audio` tag that plays MP3, OGG and WAV
-files.  The `audio` tag works the same way as `video`! It has the same `controls`
+files. The `audio` tag works the same way as `video`! It has the same `controls`
 and `autoplay` attributes, and also uses the nested `source` tag! You've actually
 learned two useful HTML5 elements in one!
 
