@@ -1,0 +1,170 @@
+{
+              title: "28 HTML5 Video Embed - YouTube",
+           host_url: "https://www.youtube.com/watch?v=ymUxDt_mOxU",
+          presenter: "Jonathan Grover",
+             length: "10:53",
+     slides_summary: [
+        {
+             start_offset: "00:00",
+               end_offset: "00:27",
+                  bullets: [
+                "next we're going to embed a video into our home page",
+                "start off by opening up terminal"
+                "change directory into the exceptional real estate folder",
+                "git status to see where we're at",
+                "git branch so we're on the master branch"
+            ]
+        },
+        {
+             start_offset: "00:27",
+               end_offset: "01:20",
+                  bullets: [
+                "to add video here",
+                "create a new feature branch",
+                "we'll just call this branch promo-media",
+                "create a new folder for videos",
+                "mkdir videos",
+                "now we need a video to put in",
+                "I'm going to go get a cheesy video",
+                "from archive.org"
+            ]
+        },
+        {
+             start_offset: "01:20",
+               end_offset: "02:20",
+                  bullets: [
+                "on archive.org, search real estate",
+                "this website is excellent for royalty free open sourced",
+                "images and video",
+                "select a video"
+            ]
+        },
+        {
+             start_offset: "02:20",
+               end_offset: "04:11",
+                  bullets: [
+                "we want two different formats",
+                "in order to reach all of the different",
+                "browsers and devices",
+                "we want at least the h.264 encoded mp4",
+                "as well as either a webm or ogv video",
+                "so we're going to go ahead and grab",
+                "those two and save the files",
+                "just going to rename it real-estate with",
+                "a dash in the middle all lowercase so",
+                "real-estate.mp4",
+                "also grab the OGG video link",
+                "save file, and we'll put them both",
+                "in the same place in the video folder",
+                "name it the exact same thing",
+                "but have a different file extension",
+                "real-estate.ogb"
+            ]
+        },
+        {
+             start_offset: "04:11",
+               end_offset: "04:51",
+                  bullets: [
+                "now I have these two formats",
+                "which are going to work anywhere",
+                "jump back to terminal",
+                "bring up sublime text",
+                "bring up my index page",
+                "scroll down past these paragraphs",
+                "I'm going to embed the promo video"
+            ]
+        },
+        {
+             start_offset: "04:51",
+               end_offset: "05:21",
+                  bullets: [
+                "in html5 the way we embed video",
+                "is by using the <video> element ",
+                "made up of this opening and closing",
+                "<video> tag okay so inside of the opening",
+                "tag here I'm going to put an attribute 'controls'",
+                "this is going to set it up so that the controls are visible"
+            ]
+        },
+        {
+             start_offset: "05:21",
+               end_offset: "06:41",
+                  bullets: [
+                "inside the video element",
+                "add the <source> element",
+                "specify an 'src' attribute",
+                "which will point to the video as well as",
+                "a type attribute which will tell it the",
+                "specific type of the video",
+                "for this first one we're going to tell it",
+                "the type is video/mp4 ",
+                "and for 'src' tell the browser to",
+                "first go into the 'videos/' folder and then",
+                "put the name of the video which in",
+                "this case is real-estate.mp4",
+                "copy paste this for the next source tag",
+                "we'll change it a bit",
+                "this will be real-estate.ogv",
+                "we'll set the type here to video/ogg",
+                "the codec type is called OGG Theora",
+                "sometimes you'll see the file",
+                "ending in .ogg and sometimes",
+                "ending in .ogv like this one was",
+            ]
+        },
+        {
+             start_offset: "06:41",
+               end_offset: "08:15",
+                  bullets: [
+                "in case our browser does",
+                "not support the html5 video",
+                "put some fallback content here",
+                "write a message something like",
+                "'your browser does not support html5 video",
+                "please upgrade your browser okay",
+                "we're going make this text please upgrade your",
+                "browser actually link to a place where",
+                "they can upgrade their browser
+                "I'll set it the target='_blank',
+                "and we'll also set the href",
+                "to point to the site http://browsehappy.com",
+                "which takes them to a page which has links",
+                "to all the newest versions of their favorite browser"
+            ]
+        },
+        {
+             start_offset: "08:15",
+               end_offset: "09:45",
+                  bullets: [
+                "save that",
+                "let's go ahead and test this outd",
+                "go to the home page",
+                "scroll down ",
+                "see our video",
+                "click Play",
+                "listen to the awesome music",
+                "Chrome is playing the mp4 file okay",
+                "Safari is playing the mp4 file",
+                "then we'll bring up Firefox",
+                "Firefox will not play mp4 so now it's",
+                "going to play the second source tag",
+                "right which is the ogv",
+                "Opera is also playing the ogv file okay"
+            ]
+        },
+        {
+             start_offset: "09:45",
+               end_offset: "10:53",
+                  bullets: [
+                "commit changes",
+                "git add .",
+                "git commit -m 'add promo video'",
+                "git push origin promo-media",
+                "since this is publishable work",
+                "I'm going to go ahead and merge this",
+                "into master",
+                "and push it up"
+            ]
+        }
+    ]
+}
