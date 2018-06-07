@@ -27,15 +27,12 @@ we've learned in a brief lab.
 
 ## Introduce Embedded Videos
 
-The `video` tag, similar to `img`, can display video files stored locally (i.g.
-in a 'videos' folder within your website) or videos from somewhere else on the
-internet. 
+The `video` tag, similar to `img`, can display videos from files stored locally
+(i.e. saved on your computer or in the same directory as your `html` file) or
+videos from somewhere else on the internet. 
 
-Like `img` tags, `video` tags can contain a `src` attribute pointed to the file
-we want to play. This file could be accessed using a _relative_, local folder
-path, or an _absolute_ URL path.
-
-However, the `src` attribute is optional for `video` tags. Alternatively, the
+Like `img` tags, `video` tags can contain a `src` attribute pointing to the file
+we want to play. However, the `src` attribute is optional for `video` tags. Alternatively, the
 `video` tag is designed so that it can _wrap_ around multiple, separate `source`
 tags. A basic `video` element, complete with source tags would look like this:
 
