@@ -25,16 +25,22 @@ we've learned in a brief lab.
 2. Practice using the `video` tag by creating our own
 
 
-## Introduce Embedded Videos
+## Introducing Embedded Videos
 
 The `video` tag, similar to `img`, can display videos from files stored locally
 (i.e. saved on your computer or in the same directory as your `html` file) or
 videos from somewhere else on the internet. 
 
 Like `img` tags, `video` tags can contain a `src` attribute pointing to the file
-we want to play. However, the `src` attribute is optional for `video` tags. Alternatively, the
-`video` tag is designed so that it can _wrap_ around multiple, separate `source`
-tags. A basic `video` element, complete with source tags would look like this:
+we want to play:
+
+```html
+<video src="videofile.ogg" autoplay poster="posterimage.jpg"></video>
+```
+
+Additionally, we can _wrap_ the `video` tag around multiple, separate `source`
+tags as follows. A basic `video` element, complete with multiple video sources
+may look like this:
 
 ```html
 <video>
@@ -43,7 +49,7 @@ tags. A basic `video` element, complete with source tags would look like this:
 </video>
 ```
 
-Why two sources? Compatibility! When HTML is rendered, your browser will try to
+Why two sources? Compatibility! When HTML is rendered, the browser will try to
 load the first source. If it fails, it will _fall back_ to the second source.
 
 All modern browsers support MP4 files. If we had the above video on a website,
@@ -70,30 +76,34 @@ they won't see the video content. Instead, they will see the message "Your brows
 support HTML5 video", followed by a link to [browsehappy.com](browsehappy.com),
 where they can download an up-to-date browser.
 
-The `video` tag has some important attributes to note:
+
+#### Video Tag Attributes
+
+The `video` tag has some important attributes worth noting:
 
 * `controls` - the embedded video will always show video controls
 * `autoplay` - the video will play on page load, rather than waiting for a user to click play
 
-The `width` and `height` attributes are also worth noting. These set the size of
+The `width` and `height` attributes are also important. These set the size of
 the video, just as with other HTML tags. However, it is good practice to set
-these. Without them, the video element may flicker on page load before it loads.
+these to specific values. Without them, the video element may flicker while the
+page is loading.
 
 The `source` tag is only ever used for multiple media resources, as we have in
-our example. The `src` attribute of `source` is always required, as it is the location of
-the file we want to play. The `type` tag is helpful in defining what format the
-media is in.
+our example. The `src` attribute of `source` is always required, as it is the
+path to the file we want to play. The `type` tag is helpful in defining what
+format the media is in.
 
 
-## Reinforce What We Have Learned By Building a Video Element
+## Building a Video Element
 
 Its time to apply what we've just learned! In `index.html`, some basic code is
 provided. Your task is to create a video element complete with _two_ video
 sources and the attributes we've discussed. For this portion of the lesson, we
-will be using a video stored elsewhere on the internet.. a _dramatic_ real
-estate video. There are two video formats, MP4 and OGV:
+will be using a video stored elsewhere on the internet...a _dramatic_ real
+estate video! There are two video formats, MP4 and OGV:
 
-**Caution: The music in these videos may be loud initially**
+**Caution: The music in these videos may be loud**
 
 * MP4 video: http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/real-estate.mp4
 * OGV video: http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/real-estate.ogv
@@ -119,10 +129,10 @@ We can customize the size of the video on our page and make sure our
 video is viewable by every site visitor. This way, we're not just catering to
 those with the most up-to-date browsers.
 
-In addition to `video`, there is also an `audio` tag that plays MP3, OGG and WAV
-files. The `audio` tag works the same way as `video`! It has the same `controls`
-and `autoplay` attributes, and also uses the nested `source` tag! You've actually
-learned two useful HTML5 elements in one!
+In addition to `video`, there is also an `audio` tag that plays MP3, OGG, and
+WAV files. The `audio` tag works the same way as `video`! It has the same
+`controls` and `autoplay` attributes, and also uses the nested `source` tag!
+You've actually learned two useful HTML5 elements in one!
 
 
 <p data-visibility='hidden'>View <a
