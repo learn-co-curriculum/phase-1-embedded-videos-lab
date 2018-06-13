@@ -112,8 +112,8 @@ To complete this lab:
 
 1. Create a `video` tag with the attributes `controls` and `autoplay`
 2. Set the width of `video` to '600px', and the height to '400px'
-2. Create a `source` tag for the MP4 video URL above that has `src` and `type` attributes
-3. Create a fall back `source` tag for the OGV video URL above that has `src` and `type` attributes
+2. Create a `source` tag for the MP4 video URL above that has appropriate `src` and `type` attributes
+3. Create a fall back `source` tag for the OGV video URL above that has appropriate `src` and `type` attributes
 
 Run `learn` and follow the test messages as you go. You can also run
 `httpserver` or open `index.html` in a browser tab to see your work as you build
