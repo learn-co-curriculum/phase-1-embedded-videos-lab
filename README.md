@@ -135,7 +135,3 @@ WAV files. The `audio` tag works the same way as `video`! It has the same
 You've actually learned two useful HTML5 elements in one!
 
 
-<p data-visibility='hidden'>View <a
-href='https://learn.co/lessons/html5-video-embed-code-along' title='HTML5 Video
-Embed Code-Along'>HTML5 Video Embed Code-Along</a> on Learn.co and start
-learning to code for free.</p>
