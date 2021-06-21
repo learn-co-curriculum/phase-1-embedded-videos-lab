@@ -1,5 +1,4 @@
-# HTML5 Video Embed Code-Along
-
+# HTML5 Embedded Videos Lab
 
 ## Problem Statement
 
