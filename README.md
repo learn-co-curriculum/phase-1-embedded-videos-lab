@@ -1,6 +1,11 @@
 # HTML5 Embedded Videos Lab
 
-## Problem Statement
+## Learning Goals
+
+- Introduce the HTML `video` tag and its attributes
+- Practice using the `video` tag by creating our own
+
+## Introduction
 
 Adding images to HTML content is a great way to make websites more appealing and
 engaging for your users. Sometimes, though, we want _just a little more
@@ -16,11 +21,6 @@ links.
 
 In this lesson, we will be exploring the HTML `video` tag then applying what
 we've learned in a brief lab.
-
-## Objectives
-
-1. Introduce the HTML `video` tag and its attributes
-2. Practice using the `video` tag by creating our own
 
 ## Introducing Embedded Videos
 
@@ -76,7 +76,7 @@ browser does not support HTML5 video", followed by a link to
 [browsehappy.com](browsehappy.com), where they can download an up-to-date
 browser.
 
-#### Video Tag Attributes
+### Video Tag Attributes
 
 The `video` tag has some important attributes worth noting:
 
@@ -118,7 +118,6 @@ Run `learn` and follow the test messages as you go. You can also run
 `httpserver` or open `index.html` in a browser tab to see your work as you build
 it. Run `learn submit` once you've passed all the tests.
 
-
 ## Conclusion
 
 With the `video` tag, we can spice up our plain old text websites, whether it is
@@ -132,5 +131,3 @@ In addition to `video`, there is also an `audio` tag that plays MP3, OGG, and
 WAV files. The `audio` tag works the same way as `video`! It has the same
 `controls` and `autoplay` attributes, and also uses the nested `source` tag!
 You've actually learned two useful HTML5 elements in one!
-
-
