@@ -8,8 +8,8 @@
 ## Introduction
 
 Adding images to HTML content is a great way to make websites more appealing and
-engaging for your users. Sometimes, though, we want _just a little more
-pizzazz_ and we need to add glamorous **video content**.
+engaging for your users. Sometimes, though, we want _just a little more pizzazz_
+and we need to add glamorous **video content**.
 
 In the past, adding video to HTML was only possible using the `iframe` tag. This
 method is still implemented, and sites like [Youtube](youtube.com) still provide
@@ -43,8 +43,14 @@ We can _wrap_ the `video` tag around multiple, separate `source` tags. A basic
 
 ```html
 <video>
-  <source src="https://s3.amazonaws.com/ironboard-learn/cat_video.mp4" type="video/mp4">
-  <source src="https://s3.amazonaws.com/ironboard-learn/cat_video.ogg" type="video/ogg">
+  <source
+    src="https://s3.amazonaws.com/ironboard-learn/cat_video.mp4"
+    type="video/mp4"
+  />
+  <source
+    src="https://s3.amazonaws.com/ironboard-learn/cat_video.ogg"
+    type="video/ogg"
+  />
 </video>
 ```
 
@@ -64,15 +70,24 @@ this:
 
 ```html
 <video>
-  <source src="https://s3.amazonaws.com/ironboard-learn/cat_video.mp4" type="video/mp4">
-  <source src="https://s3.amazonaws.com/ironboard-learn/cat_video.ogg" type="video/ogg">
-  Your browser does not support HTML5 video  <a href="https://browsehappy.com/" target="_blank">Please upgrade your browser</a>
+  <source
+    src="https://s3.amazonaws.com/ironboard-learn/cat_video.mp4"
+    type="video/mp4"
+  />
+  <source
+    src="https://s3.amazonaws.com/ironboard-learn/cat_video.ogg"
+    type="video/ogg"
+  />
+  Your browser does not support HTML5 video
+  <a href="https://browsehappy.com/" target="_blank"
+    >Please upgrade your browser</a
+  >
 </video>
 ```
 
-If a user was still hanging on to Internet Explorer 8 (they are out there),
-they won't see the video content. Instead, they will see the message "Your
-browser does not support HTML5 video", followed by a link to
+If a user was still hanging on to Internet Explorer 8 (they are out there), they
+won't see the video content. Instead, they will see the message "Your browser
+does not support HTML5 video", followed by a link to
 [browsehappy.com](browsehappy.com), where they can download an up-to-date
 browser.
 
@@ -80,8 +95,9 @@ browser.
 
 The `video` tag has some important attributes worth noting:
 
-* `controls` - the embedded video will always show video controls
-* `autoplay` - the video will play on page load, rather than waiting for a user to click play
+- `controls` - the embedded video will always show video controls
+- `autoplay` - the video will play on page load, rather than waiting for a user
+  to click play
 
 The `width` and `height` attributes are also important. These set the size of
 the video, just as with other HTML tags. However, it is good practice to set
@@ -93,7 +109,6 @@ our example. The `src` attribute of `source` is always required, as it is the
 path to the file we want to play. The `type` tag is helpful in defining what
 format the media is in.
 
-
 ## Building a Video Element
 
 Its time to apply what we've just learned! In `index.html`, some basic code is
@@ -102,17 +117,21 @@ sources and the attributes we've discussed. For this portion of the lesson, we
 will be using a video stored elsewhere on the internet...a _dramatic_ real
 estate video! There are two video formats, MP4 and OGG:
 
-**Caution: The music in these videos may be loud**
+> **Caution**: The music in these videos may be loud
 
-* MP4 video: https://curriculum-content.s3.amazonaws.com/skills-front-end-web-development/real-estate-lab-assets/real-estate.mp4
-* OGG video: https://curriculum-content.s3.amazonaws.com/skills-front-end-web-development/real-estate-lab-assets/real-estate.ogg
+- MP4 video:
+  - [https://curriculum-content.s3.amazonaws.com/skills-front-end-web-development/real-estate-lab-assets/real-estate.mp4](https://curriculum-content.s3.amazonaws.com/skills-front-end-web-development/real-estate-lab-assets/real-estate.mp4)
+- OGG video:
+  - [https://curriculum-content.s3.amazonaws.com/skills-front-end-web-development/real-estate-lab-assets/real-estate.ogg](https://curriculum-content.s3.amazonaws.com/skills-front-end-web-development/real-estate-lab-assets/real-estate.ogg)
 
 To complete this lab:
 
 1. Create a `video` tag with the attributes `controls` and `autoplay`
 2. Set the width of `video` to '600px', and the height to '400px'
-2. Create a `source` tag for the MP4 video URL above that has appropriate `src` and `type` attributes
-3. Create a fall back `source` tag for the OGG video URL above that has appropriate `src` and `type` attributes
+3. Create a `source` tag for the MP4 video URL above that has appropriate `src`
+   and `type` attributes
+4. Create a fall back `source` tag for the OGG video URL above that has
+   appropriate `src` and `type` attributes
 
 Run `learn` and follow the test messages as you go. You can also run
 `httpserver` or open `index.html` in a browser tab to see your work as you build
@@ -123,9 +142,9 @@ it. Run `learn submit` once you've passed all the tests.
 With the `video` tag, we can spice up our plain old text websites, whether it is
 a demo reel for a company product or a personal vlog.
 
-We can customize the size of the video on our page and make sure our
-video is viewable by every site visitor. This way, we're not just catering to
-those with the most up-to-date browsers.
+We can customize the size of the video on our page and make sure our video is
+viewable by every site visitor. This way, we're not just catering to those with
+the most up-to-date browsers.
 
 In addition to `video`, there is also an `audio` tag that plays MP3, OGG, and
 WAV files. The `audio` tag works the same way as `video`! It has the same
