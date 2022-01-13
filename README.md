@@ -46,11 +46,11 @@ We can _wrap_ the `video` tag around multiple, separate `source` tags. A basic
   <source
     src="https://s3.amazonaws.com/ironboard-learn/cat_video.mp4"
     type="video/mp4"
-  />
+  >
   <source
     src="https://s3.amazonaws.com/ironboard-learn/cat_video.ogg"
     type="video/ogg"
-  />
+  >
 </video>
 ```
 
@@ -73,11 +73,11 @@ this:
   <source
     src="https://s3.amazonaws.com/ironboard-learn/cat_video.mp4"
     type="video/mp4"
-  />
+  >
   <source
     src="https://s3.amazonaws.com/ironboard-learn/cat_video.ogg"
     type="video/ogg"
-  />
+  >
   Your browser does not support HTML5 video
   <a href="https://browsehappy.com/" target="_blank"
     >Please upgrade your browser</a
