@@ -18,16 +18,16 @@ RSpec.describe 'index.html' do
       expect(video.attributes["controls"]).to_not be_nil, "No controls attribute was found in the video"
     end
 
-    it 'contains a "width" attribute set to "600px" ' do
+    it 'contains a "width" attribute set to "600" ' do
       video = parsed_html.search('video')[0]
       expect(video.attributes["width"]).to_not be_nil, "No width attribute was found in the video"
-      expect(video.attributes["width"].value).to eq("600px"), "The width attribute should be set to '600px'"
+      expect(video.attributes["width"].value).to eq("600"), "The width attribute should be set to '600'"
     end
 
-    it 'contains a "height" attribute set to "400px" ' do
+    it 'contains a "height" attribute set to "400" ' do
       video = parsed_html.search('video')[0]
       expect(video.attributes["height"]).to_not be_nil, "No height attribute was found in the video"
-      expect(video.attributes["height"].value).to eq("400px"), "The height attribute should be set to '400px'"
+      expect(video.attributes["height"].value).to eq("400"), "The height attribute should be set to '400'"
     end
 
     it 'contains an "autoplay" attribute' do
