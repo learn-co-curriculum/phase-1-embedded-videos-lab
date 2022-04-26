@@ -12,9 +12,9 @@ engaging for your users. Sometimes, though, we want _just a little more pizzazz_
 and we need to add glamorous **video content**.
 
 In the past, adding video to HTML was only possible using the `iframe` tag. This
-method is still implemented, and sites like [Youtube](youtube.com) still provide
-iframe code as a default option. However, with HTML5, a _new_ tag was
-introduced: `video`. The `video` tag provides a more _semantic_ method for
+method is still implemented, and sites like [Youtube](https://www.youtube.com/)
+still provide iframe code as a default option. However, with HTML5, a _new_ tag
+was introduced: `video`. The `video` tag provides a more _semantic_ method for
 including video. It also allows for some customization of videos that iframe
 does not. Namely, with the `video` tag, we can provide _multiple_ video source
 links.
@@ -88,7 +88,7 @@ this:
 If a user was still hanging on to Internet Explorer 8 (they are out there), they
 won't see the video content. Instead, they will see the message "Your browser
 does not support HTML5 video", followed by a link to
-[browsehappy.com](browsehappy.com), where they can download an up-to-date
+[browsehappy.com](https://browsehappy.com/), where they can download an up-to-date
 browser.
 
 ### Video Tag Attributes
