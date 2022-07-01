@@ -100,9 +100,9 @@ The `video` tag has some important attributes worth noting:
   to click play
 
 The `width` and `height` attributes are also important. These set the size of
-the video, just as with other HTML tags. However, it is good practice to set
-these to specific values. Without them, the video element may flicker while the
-page is loading.
+the video in pixels, just as with other HTML tags. However, it is good practice
+to set these to specific values. Without them, the video element may flicker while
+the page is loading.
 
 The `source` tag is only ever used for multiple media resources, as we have in
 our example. The `src` attribute of `source` is always required, as it is the
@@ -127,7 +127,7 @@ estate video! There are two video formats, MP4 and OGG:
 To complete this lab:
 
 1. Create a `video` tag with the attributes `controls` and `autoplay`
-2. Set the width of `video` to '600px', and the height to '400px'
+2. Set the width of `video` to '600', and the height to '400'
 3. Create a `source` tag for the MP4 video URL above that has appropriate `src`
    and `type` attributes
 4. Create a fall back `source` tag for the OGG video URL above that has
