@@ -133,9 +133,9 @@ To complete this lab:
 4. Create a fall back `source` tag for the OGG video URL above that has
    appropriate `src` and `type` attributes
 
-Run `learn` and follow the test messages as you go. You can also run
+Run `learn test` and follow the test messages as you go. You can also run
 `httpserver` or open `index.html` in a browser tab to see your work as you build
-it. Run `learn submit` once you've passed all the tests.
+it.
 
 ## Conclusion
 
