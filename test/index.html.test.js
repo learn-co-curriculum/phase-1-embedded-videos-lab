@@ -32,12 +32,12 @@ describe("index.html", () => {
 
     it("contains a 'width' attribute set to '600'", () => {
       const hint = "Include a 'width' attribute with a value of '600'";
-      expect(video, hint).to.have.attribute("width", "600");
+      expect(video, hint).to.have.attribute("width").match(/600/);
     });
 
     it("contains a 'height' attribute set to '400'", () => {
       const hint = "Include a 'height' attribute with a value of '400'";
-      expect(video, hint).to.have.attribute("height", "400");
+      expect(video, hint).to.have.attribute("height").match(/400/);
     });
 
     it("contains two nested <source> tags", () => {
